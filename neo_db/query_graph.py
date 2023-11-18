@@ -71,7 +71,7 @@ def get_KGQA_answer(array):
           
     return [get_json_data(data_array), get_profile(str(data_array[-1]['p.Name'])), b.split("'")[1]]
 def get_answer_profile(name):
-    with open("./spider/images/"+"%s.jpg" % (str(name)), "rb") as image:
+    with open("D:/DevelopTool/PyCharm Community Edition 2023.2.5/PycharmProjects/KGQA_HLM/spider/images/"+"%s.jpg" % (str(name)), "rb") as image:
         base64_data = base64.b64encode(image.read())
         b = str(base64_data)
     return [get_profile(str(name)), b.split("'")[1]]

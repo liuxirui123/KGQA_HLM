@@ -1,7 +1,8 @@
-from py2neo import Graph, Node, Relationship,NodeSelector
+from py2neo import Graph, Node, Relationship,NodeMatcher
 from config import graph
 
-with open("./raw_data/relation.txt") as f:
+with open("D:/DevelopTool/PyCharm Community Edition 2023.2.5/PycharmProjects/KGQA_HLM/raw_data/relation.txt",
+          encoding='utf-8') as f:
     for line in f.readlines():
         rela_array=line.strip("\n").split(",")
         print(rela_array)

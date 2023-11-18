@@ -58,3 +58,19 @@
 ![界面](https://github.com/chizhu/KGQA_HLM/blob/master/5.png)
 
 ![界面](https://github.com/chizhu/KGQA_HLM/blob/master/6.png)
+
+ps:
+1. NodeSelecter -> NodeMatcher
+2. config.py中新版本py2neo的Connection profiles示例：
+graph = Graph("http://localhost:7474", auth=("neo4j", "123456"))
+3. No such file or directory: './raw_data/relation.txt':改为绝对路径
+4. 编码改为utf-8:file = open(path, encoding='utf-8')
+5. 下载pyltp...whl,放在pip文件夹下，cmd下载
+6. 下载ltp模型，更改pisrl文件
+7. ltp.py中Segmentor()和Postagger()语法修改：
+    # postagger = pyltp.Postagger()  # 初始化实例
+    # postagger.load(pos_model_path)  # 加载模型
+    postagger = pyltp.Postagger(pos_model_path)
+8. 环境： Python3.6.0  -  Jinja2 2.10.1  -  Flask 1.1.0
+
+

@@ -1,6 +1,6 @@
 import codecs
 import json
-with open('./spider/json/data.json', encoding='utf-8')as f:
+with open('D:/DevelopTool/PyCharm Community Edition 2023.2.5/PycharmProjects/KGQA_HLM/spider/json/data.json', encoding='utf-8')as f:
     data = json.load(f)
 
 def get_profile(name):

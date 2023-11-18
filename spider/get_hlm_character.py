@@ -10,8 +10,8 @@ from bs4 import BeautifulSoup
 import codecs
 from get_character_array import get_character
 import os
-if not os.path.exists("./spider/images"):
-		os.mkdir("./spider/images")
+if not os.path.exists("D:/DevelopTool/PyCharm Community Edition 2023.2.5/PycharmProjects/KGQA_HLM/spider/images"):
+		os.mkdir("D:/DevelopTool/PyCharm Community Edition 2023.2.5/PycharmProjects/KGQA_HLM/spider/images")
 
 headers = {}
 headers["User-Agent"] = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36"
